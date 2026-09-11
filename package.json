@@ -1,0 +1,47 @@
+{
+  "name": "zoxide",
+  "version": "0.10.0",
+  "description": "A smarter cd command for your terminal",
+  "keywords": [
+    "cli",
+    "filesystem",
+    "shell",
+    "tool",
+    "utility"
+  ],
+  "homepage": "https://github.com/ajeetdsouza/zoxide",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajeetdsouza/zoxide.git"
+  },
+  "author": "Ajeet D'Souza <98ajeet@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "bin": {
+    "zoxide": "./src/main.ts"
+  },
+  "files": [
+    "src",
+    "templates",
+    "contrib/completions",
+    "man"
+  ],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@types/node": "^22.18.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.37.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.45.0",
+    "vitest": "^3.2.4"
+  }
+}
