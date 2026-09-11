@@ -46,9 +46,7 @@
   zoxide
 </h1>
 
-[![crates.io][crates.io-badge]][crates.io]
 [![Downloads][downloads-badge]][releases]
-[![Built with Nix][builtwithnix-badge]][builtwithnix]
 
 zoxide is a **smarter cd command**, inspired by z and autojump.
 
@@ -106,7 +104,6 @@ zoxide can be installed in 4 easy steps:
    >
    > | Distribution        | Repository              | Instructions                                                      |
    > | ------------------- | ----------------------- | ----------------------------------------------------------------- |
-   > | **_Any_**           | **[crates.io]**         | `cargo install zoxide --locked`                                   |
    > | _Any_               | [conda-forge]           | `conda install -c conda-forge zoxide`                             |
    > | _Any_               | [guix]                  | `guix install zoxide`                                             |
    > | _Any_               | [Linuxbrew]             | `brew install zoxide`                                             |
@@ -137,7 +134,6 @@ zoxide can be installed in 4 easy steps:
    >
    > | Repository      | Instructions                          |
    > | --------------- | ------------------------------------- |
-   > | **[crates.io]** | `cargo install zoxide --locked`       |
    > | **[Homebrew]**  | `brew install zoxide`                 |
    > | [conda-forge]   | `conda install -c conda-forge zoxide` |
    > | [MacPorts]      | `port install zoxide`                 |
@@ -167,7 +163,6 @@ zoxide can be installed in 4 easy steps:
    >
    > | Repository      | Instructions                          |
    > | --------------- | ------------------------------------- |
-   > | **[crates.io]** | `cargo install zoxide --locked`       |
    > | [Chocolatey]    | `choco install zoxide`                |
    > | [conda-forge]   | `conda install -c conda-forge zoxide` |
    > | [Scoop]         | `scoop install zoxide`                |
@@ -187,7 +182,6 @@ zoxide can be installed in 4 easy steps:
    >
    > | Distribution  | Repository      | Instructions                    |
    > | ------------- | --------------- | ------------------------------- |
-   > | **_Any_**     | **[crates.io]** | `cargo install zoxide --locked` |
    > | DragonFly BSD | [DPorts]        | `pkg install zoxide`            |
    > | FreeBSD       | [FreshPorts]    | `pkg install zoxide`            |
    > | NetBSD        | [pkgsrc]        | `pkgin install zoxide`          |
@@ -213,6 +207,20 @@ zoxide can be installed in 4 easy steps:
    >
    > ```sh
    > curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
+   > ```
+
+   </details>
+
+   <details>
+   <summary>From source</summary>
+
+   > zoxide is written in TypeScript and runs on [Node.js] 22.18 or newer, which
+   > executes it directly — there is no build step.
+   >
+   > ```sh
+   > git clone https://github.com/ajeetdsouza/zoxide
+   > cd zoxide
+   > npm install --global .
    > ```
 
    </details>
@@ -479,14 +487,10 @@ Environment variables[^2] can be used for configuration. They must be set before
 [algorithm-matching]: https://github.com/ajeetdsouza/zoxide/wiki/Algorithm#matching
 [alpine linux packages]: https://pkgs.alpinelinux.org/packages?name=zoxide
 [arch linux extra]: https://archlinux.org/packages/extra/x86_64/zoxide/
-[builtwithnix-badge]: https://img.shields.io/badge/builtwith-nix-7d81f7?logo=nixos&logoColor=white&style=flat-square
-[builtwithnix]: https://builtwithnix.org/
 [chocolatey]: https://community.chocolatey.org/packages/zoxide
 [clink-zoxide]: https://github.com/shunsambongi/clink-zoxide
 [clink]: https://github.com/mridgers/clink
 [conda-forge]: https://anaconda.org/conda-forge/zoxide
-[crates.io-badge]: https://img.shields.io/crates/v/zoxide?logo=rust&logoColor=white&style=flat-square
-[crates.io]: https://crates.io/crates/zoxide
 [debian packages]: https://packages.debian.org/stable/admin/zoxide
 [exherbo packages]: https://gitlab.exherbo.org/exherbo/rust/-/tree/master/packages/sys-apps/zoxide
 [devuan packages]: https://pkginfo.devuan.org/cgi-bin/package-query.html?c=package&q=zoxide
@@ -510,6 +514,7 @@ Environment variables[^2] can be used for configuration. They must be set before
 [linuxbrew]: https://formulae.brew.sh/formula-linux/zoxide
 [macports]: https://ports.macports.org/port/zoxide/summary
 [neovim]: https://github.com/neovim/neovim
+[node.js]: https://nodejs.org
 [nixpkgs]: https://github.com/NixOS/nixpkgs/blob/master/pkgs/by-name/zo/zoxide/package.nix
 [nnn-autojump]: https://github.com/jarun/nnn/blob/master/plugins/autojump
 [nnn]: https://github.com/jarun/nnn

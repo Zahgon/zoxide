@@ -12,3 +12,35 @@ target_nix/
 
 ### Python ###
 .mypy_cache/
+
+### Node / TypeScript ###
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Test / coverage output
+coverage/
+.vitest/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+### OS ###
+.DS_Store
+.idea/
+*.swp
+
+### Task harness ###
+instruction.md
+truth.md
+test.patch
+fix.patch
+golden.patch
